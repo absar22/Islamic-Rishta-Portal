@@ -1,0 +1,115 @@
+
+
+
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nikaah Namah - Islamic Rishta Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>☪️ Nikaah Namah: Islamic Rishta Portal</h1>
+    <p class="quote">"And among His signs is that He created for you mates..." — Qur'an 30:21</p>
+
+    <!-- Stats Bar -->
+    <div class="stats-bar">
+      <div class="stat">
+        <div class="stat-number" id="total-viewed">0</div>
+        <div class="stat-label">Viewed</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number" id="total-proposals">0</div>
+        <div class="stat-label">Proposals</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number" id="total-rejected">0</div>
+        <div class="stat-label">Passed</div>
+      </div>
+    </div>
+
+    <!-- Profile Card -->
+    <div id="profile-card">
+      <img id="profile-img" src="" alt="Profile Picture">
+      <div class="badge">✓ Practicing Muslim</div>
+      <h2 id="profile-name"></h2>
+      <p id="profile-bio"></p>
+      
+      <div class="profile-details">
+        <div class="detail-item">
+          <span class="detail-label">Age</span>
+          <span class="detail-value" id="profile-age"></span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Rating</span>
+          <span class="detail-value" id="profile-rating"></span>
+          <div id="stars"></div>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Income</span>
+          <span class="detail-value" id="profile-income"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="buttons">
+      <button id="proposal-btn">💌 Send Proposal</button>
+      <button id="reject-btn">⏭️ Next Rishta</button>
+      <button id="molvi-btn">🕌 Consult Scholar</button>
+    </div>
+
+    <!-- Reaction Message -->
+    <div id="reaction"></div>
+
+    <!-- Proposals List -->
+    <div class="proposals-section">
+      <h2>📜 Active Proposals (<span id="proposal-count">0</span>)</h2>
+      <ul id="proposal-list">
+        <li class="empty-state">No proposals yet. Make Dua and send one! 🤲</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Scholar Modal -->
+  <div id="molvi-modal" class="modal">
+    <div class="modal-content">
+      <h3>🕌 Scholar's Advice</h3>
+      <p id="molvi-advice"></p>
+      <button class="close-modal">JazakAllah Khair</button>
+    </div>
+  </div>
+
+  <!-- Mehr Calculator Modal -->
+  <div id="mehr-modal" class="modal">
+    <div class="modal-content">
+      <h3>💰 Mehr Calculator</h3>
+      <p id="mehr-intro"></p>
+      
+      <div class="mehr-box minimum">
+        <div class="mehr-label">Minimum Mehr (3 months salary):</div>
+        <div class="mehr-amount" id="mehr-minimum"></div>
+      </div>
+      
+      <div class="mehr-box recommended">
+        <div class="mehr-label">Recommended Mehr (10 months salary):</div>
+        <div class="mehr-amount" id="mehr-recommended"></div>
+        <div class="gold-info" id="gold-equivalent"></div>
+      </div>
+      
+      <p class="hadith">"The best of you are those who are best to their wives" — Prophet Muhammad (PBUH)</p>
+      
+      <div class="modal-buttons">
+        <button id="confirm-proposal">✓ Confirm Proposal</button>
+        <button id="cancel-mehr">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
